@@ -32,3 +32,4 @@ symengine==0.13.0
 sympy==1.13.3
 tzdata==2025.1
 wheel==0.44.0
+gunicorn==20.1.0
