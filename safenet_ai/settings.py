@@ -73,10 +73,10 @@ WSGI_APPLICATION = 'safenet_ai.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'safenetai',  # Database name
-        'USER': 'safenetai_user',  # Username
-        'PASSWORD': '9ZimPbbjgVqBAcCRoNEkO3ZJQmv4KOEP',  # Password
-        'HOST': 'dpg-cvr6bjp5pdvs73ecng50-a.singapore-postgres.render.com',  # Host
+        'NAME': 'safenetai_if86',  # Database name
+        'USER': 'safenetai_if86_user',  # Username
+        'PASSWORD': 'hy5DkP11EURMd1BeY4VvGTcl1T8dMDIf',  # Password
+        'HOST': 'dpg-cvt9i6p5pdvs739j5dh0-a.singapore-postgres.render.com',  # Host
         'PORT': '5432',  # Default PostgreSQL port
     }
 }
