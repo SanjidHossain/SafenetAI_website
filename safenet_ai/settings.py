@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'safenet_ai.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'safenetai_if86',  # Database name
         'USER': 'safenetai_if86_user',  # Username
         'PASSWORD': 'hy5DkP11EURMd1BeY4VvGTcl1T8dMDIf',  # Password
