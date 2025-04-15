@@ -35,6 +35,10 @@ INSTALLED_APPS = [
     'blog',
     'core',
     'feedback',
+    'About',
+    'Guidelines',
+    'Researchers',
+    'PublicationProject',
 ]
 
 MIDDLEWARE = [
@@ -70,16 +74,25 @@ WSGI_APPLICATION = 'safenet_ai.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'safenetai_if86',  # Database name
-        'USER': 'safenetai_if86_user',  # Username
-        'PASSWORD': 'hy5DkP11EURMd1BeY4VvGTcl1T8dMDIf',  # Password
-        'HOST': 'dpg-cvt9i6p5pdvs739j5dh0-a.singapore-postgres.render.com',  # Host
-        'PORT': '5432',  # Default PostgreSQL port
+        'ENGINE': 'django.db.backends.mysql',   # or 'mysql.connector.django' if using Connector/Python
+        'NAME': 'safenetai',             # your actual database name, not a file path
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',                      # or the hostname/IP address of your server
+        'PORT': '3306',                           # default MySQL port
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            'charset': 'utf8mb4',
+        },
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -138,6 +151,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.getenv('EMAIL_USER', '')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD', '')
-DEFAULT_FROM_EMAIL = os.getenv('EMAIL_USER', '')
+EMAIL_HOST_USER = os.getenv('EMAIL_USER', 'safenet.ai.research@gmail.com')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD', 'ltzb iutb yhkp dppz')
+DEFAULT_FROM_EMAIL = os.getenv('EMAIL_USER', 'safenet.ai.research@gmail.com')
